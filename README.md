@@ -32,9 +32,34 @@ cd <YOUR_PROJECT_NAME>
 # Step 3: Install the necessary dependencies.
 npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Set up environment variables
+# Create a .env file and add your Gemini API key
+echo "VITE_GEMINI_API_KEY=your_actual_api_key_here" > .env
+
+# Step 5: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
+
+## 🔑 API Configuration
+
+This project uses Google's Gemini API for food image analysis. To get started:
+
+1. **Get a Gemini API Key**:
+   - Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
+   - Sign in with your Google account
+   - Click "Create API key"
+   - Copy your API key
+
+2. **Configure the API Key**:
+   - Create a `.env` file in the project root
+   - Add: `VITE_GEMINI_API_KEY=your_actual_api_key_here`
+   - Replace `your_actual_api_key_here` with your actual API key
+
+3. **Features**:
+   - Real-time camera capture for food images
+   - AI-powered nutritional analysis using Gemini Vision
+   - Detailed nutrition labels with calories, macros, and micronutrients
+   - Fallback mock data when API is not configured
 
 **Edit a file directly in GitHub**
 
